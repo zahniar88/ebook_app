@@ -46,8 +46,10 @@ class _DetailScreenState extends State<DetailScreen> {
               children: [
                 Container(
                   width: double.infinity,
-                  height: 370 * 2,
                   padding: EdgeInsets.all(spacer),
+                  constraints: BoxConstraints(
+                    minHeight: 370 * 2,
+                  ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.vertical(
                       top: Radius.circular(40),
